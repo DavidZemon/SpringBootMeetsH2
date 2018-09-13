@@ -6,9 +6,9 @@ import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 @SpringBootApplication
 @EnableSpringDataWebSupport
-public class FileBasedDbTrialApplication {
+public class SpringBootMeetsH2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(FileBasedDbTrialApplication.class, args);
+        SpringApplication.run(SpringBootMeetsH2Application.class, args);
     }
 }

@@ -7,6 +7,6 @@ import org.springframework.lang.NonNull;
 
 import java.util.Collection;
 
-public interface PersonRepository extends PagingAndSortingRepository<Person, Integer>, QueryByExampleExecutor<Person> {
+public interface PersonRepository extends PagingAndSortingRepository<Person, Integer> {
     Collection<Person> findAllByLastName(@NonNull String lastName);
 }

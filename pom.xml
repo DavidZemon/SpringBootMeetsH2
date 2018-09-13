@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>name.zemon.david</groupId>
-    <artifactId>file-based-db-trial</artifactId>
+    <artifactId>SpringBootMeetsH2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>file-based-db-trial</name>
-    <description>Playing with Spring Boot and File-Based Database</description>
+    <name>SpringBootMeetsH2</name>
+    <description>Playing with Spring Boot and a File-Based Database</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -22,7 +22,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencies>
@@ -47,22 +46,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
-        </dependency>
 
         <!-- Runtime -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
             <scope>runtime</scope>
         </dependency>
 

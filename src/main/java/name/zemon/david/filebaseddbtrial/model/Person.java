@@ -1,5 +1,6 @@
 package name.zemon.david.filebaseddbtrial.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,7 +17,9 @@ import javax.persistence.Id;
 public class Person {
     @Id
     private int id;
+    @JsonProperty("first_name")
     private String firstName;
+    @JsonProperty("last_name")
     private String lastName;
     private int age;
 }
