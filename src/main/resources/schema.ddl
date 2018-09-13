@@ -1,0 +1,7 @@
+CREATE TABLE PERSON
+(
+  ID         int PRIMARY KEY,
+  LAST_NAME  VARCHAR,
+  FIRST_NAME VARCHAR,
+  AGE        int,
+);
